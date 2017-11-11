@@ -13,3 +13,4 @@ ipython = "*"
 [packages]
 
 django = "*"
+pillow = "*"
