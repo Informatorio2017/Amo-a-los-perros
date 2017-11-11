@@ -3,7 +3,34 @@
 
 
 {% block content %}
-    {% for evento in eventos %}
-        {{ evento }}
-    {% endfor %}
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-10">
+                <a class="btn btn-info" href="{% url 'eventos:nuevo' %}">Crear evento</a>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+                <h1>Eventos</h1>  
+            </div>    
+            <div class="col-md-2"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+                <ul class="list-group">
+                    {% for evento in eventos %}
+                        <li class="list-group-item">{{ evento }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+    </div>    
+
+
+    
 {% endblock %}

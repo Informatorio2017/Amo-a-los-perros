@@ -21,5 +21,5 @@ from eventos.views import eventos
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', home, name='home'),
-    url(r'^eventos/', include('eventos.urls'))
+    url(r'^eventos/', include('eventos.urls', namespace='eventos'))
 ]
