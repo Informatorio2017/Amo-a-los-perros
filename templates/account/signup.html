@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% load crispy_forms_tags %}
+{% load i18n %}
+
+{% block head_title %}{% trans "Signup" %}{% endblock %}
+
+{% block content %}
+
+<div class="row">
+    <div class="col-xs-2"></div>
+    <div class="col-xs-8">
+        <h1>{% trans "Sign Up" %}</h1>
+        
+        <p>{% blocktrans %}Already have an account? Then please <a href="{{ login_url }}">sign in</a>.{% endblocktrans %}</p>
+        
+        {% crispy form %}
+    </div>
+    <div class="col-xs-2"></div>
+</div>
+
+
+{% endblock %}

@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'allauth.account',
     'allauth.socialaccount',
     'allauth.socialaccount.providers.facebook',
+    'allauth.socialaccount.providers.twitter',
     'mascotas',
 ]
 
@@ -141,3 +142,8 @@ SITE_ID = 1
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+ACCOUNT_FORMS = {
+    "login": "AmoALosPerros.forms.CustomLoginForm",
+    "signup": "AmoALosPerros.forms.CustomSignupForm"
+}

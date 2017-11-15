@@ -14,3 +14,4 @@ ipython = "*"
 
 django = "*"
 pillow = "*"
+django-allauth = "*"

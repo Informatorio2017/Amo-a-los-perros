@@ -8,10 +8,22 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
 <body>
-    {% for message in messages %}
-        <div class="alert alert-success" role="alert">{{ message }}</div>
-    {% endfor%}
-    {% block nav %}{% endblock %}
-    {% block content %}{% endblock %}
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                {% for message in messages %}
+                    <div class="alert alert-success" role="alert">{{ message }}</div>
+                {% endfor %}
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">
+                {% block nav %}{% endblock %}
+            </div>
+        </div>
+        
+        {% block content %}{% endblock %}
+    </div>
 </body>
 </html>
