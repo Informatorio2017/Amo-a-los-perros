@@ -8,7 +8,7 @@
 4) bajarse el repo de github si ya no lo tienen.
 5) agregar el remoto de heroku para deployar: heroku git:remote -a amoalosperros
 6) con un simple `git push heroku master` se deploya a produccion, o sea a --> https://amoalosperros.herokuapp.com
-7) para correr la app en local se debe hacer `pip install -r requirements.txt`, seguido de `heroku local web -p 8000` para correrlo en el puerto 8000
+7) para correr la app en local se debe hacer `pip install -r requirements.txt` por unica vez y luego cuando se quiera arrancar el servidor local `heroku local web -p 8000` para correrlo en el puerto 8000
 8) recomiendo instalar nginx, habilitar un virtual host en `/etc/nginx/sites-enabled/amoalosperros` y crear el hosts en `/etc/hosts` como lo hicimos en el taller. o sea que cuando se le pegue a amoalosperros.com redireccione a 127.0.0.1:
 
 #### Configuracion para virtual host
