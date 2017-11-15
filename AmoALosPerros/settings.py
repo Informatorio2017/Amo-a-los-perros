@@ -128,6 +128,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
 
 CRISPY_TEMPLATE_PACK = 'bootstrap3'
 
@@ -148,3 +149,5 @@ ACCOUNT_FORMS = {
     "login": "AmoALosPerros.forms.CustomLoginForm",
     "signup": "AmoALosPerros.forms.CustomSignupForm"
 }
+
+LOGIN_REDIRECT_URL = '/eventos'
