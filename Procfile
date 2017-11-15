@@ -1,0 +1,1 @@
+web: gunicorn AmoALosPerros.wsgi --log-file -
